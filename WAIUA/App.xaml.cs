@@ -71,8 +71,8 @@ public partial class App : Application
                 .AddSingleton<IViewFactory>(conventionViewFactory)
                 .BuildServiceProvider());
 
-        AutoUpdater.ShowSkipButton = false;
-        AutoUpdater.Start("https://raw.githubusercontent.com/Soneliem/WAIUA/master/WAIUA/VersionInfo.xml");
+        AutoUpdater.CheckForUpdateEvent += AutoUpdaterOnCheckForUpdateEvent; 
+        AutoUpdater.Start("https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml");
 
         MainWindow = new MainWindow();
         MainWindow.Show();
@@ -83,5 +83,13 @@ public partial class App : Application
         Constants.Log.Information("Application Stop");
         Settings.Default.Save();
         WindowPlace.Save();
+    }
+
+    private void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
+    {
+        if (AutoUpdater.DownloadUpdate(args))
+        {
+            Environment.Exit(0);
+        }
     }
 }

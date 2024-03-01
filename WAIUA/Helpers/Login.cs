@@ -82,18 +82,11 @@ public static class Login
     public static async Task<string> GetNameServiceGetUsernameAsync(Guid puuid)
     {
         if (puuid == Guid.Empty) return null;
-        var options = new RestClientOptions(new Uri($"https://pd.{Constants.Region}.a.pvp.net/name-service/v2/players"))
-        {
-            RemoteCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) => true
-        };
-        var client = new RestClient(options);
-        RestRequest request = new()
-        {
-            RequestFormat = DataFormat.Json
-        };
-
-        string[] body = {puuid.ToString()};
-        request.AddJsonBody(body);
+        var client = new RestClient($"https://pd.{Constants.Region}.a.pvp.net/name-service/v2/players");
+        var request = new RestRequest().AddHeader("Authorization", $"Bearer {Constants.AccessToken}")
+                    .AddHeader("X-Riot-Entitlements-JWT", Constants.EntitlementToken);
+        string[] body = { puuid.ToString() };
+        request.AddBody(body);
         var response = await client.ExecutePutAsync(request).ConfigureAwait(false);
         if (response.IsSuccessful)
             try
@@ -147,4 +140,9 @@ public static class Login
         if (attemptCache) Constants.UrlToBody.TryAdd(url, response);
         return response;
     }
+    public static void PurgeCacheRequest()
+    {
+        Constants.UrlToBody.Clear();
+    }
+
 }

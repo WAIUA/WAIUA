@@ -50,6 +50,7 @@ public class LiveMatch
             return true;
         }
 
+        PurgeCacheRequest();
         Constants.Log.Error("CheckAndSetLiveMatchIdAsync() failed. Response: {Response}", response.ErrorException);
         return false;
     }
@@ -146,6 +147,7 @@ public class LiveMatch
                         Player player = new();
                         try
                         {
+                            await Task.Delay(index * 1000);
                             var t1 = GetCardAsync(riotPlayer.PlayerIdentity.PlayerCardId, index);
                             var t4 = GetPlayerHistoryAsync(riotPlayer.Subject, seasonData);
                             var t6 = GetPresenceInfoAsync(riotPlayer.Subject, presencesResponse);

@@ -38,14 +38,14 @@ public partial class Settings : UserControl
     {
         CurrentVersion.Text = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         LatestVersion.Text = await GetLatestVersionAsync().ConfigureAwait(false);
-        AutoUpdater.Start("https://raw.githubusercontent.com/Soneliem/WAIUA/master/WAIUA/VersionInfo.xml");
+        AutoUpdater.Start("https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml");
         await CheckAndUpdateJsonAsync().ConfigureAwait(false);
     }
 
     private static Task<string> GetLatestVersionAsync()
     {
         var xml = new XmlDocument();
-        xml.Load("https://raw.githubusercontent.com/Soneliem/WAIUA/master/WAIUA/VersionInfo.xml");
+        xml.Load("https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml");
         var result = xml.GetElementsByTagName("version");
         return Task.FromResult(result[0].InnerText);
     }
