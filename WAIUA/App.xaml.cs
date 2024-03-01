@@ -87,9 +87,12 @@ public partial class App : Application
 
     private void AutoUpdaterOnCheckForUpdateEvent(UpdateInfoEventArgs args)
     {
-        if (AutoUpdater.DownloadUpdate(args))
+        if (args.IsUpdateAvailable)
         {
-            Environment.Exit(0);
+            if (AutoUpdater.DownloadUpdate(args))
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }
