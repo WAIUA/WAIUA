@@ -1,18 +1,18 @@
 <p align="center">
-  <a href="https://github.com/pwall2222/NOWT">
+  <a href="https://github.com/WAIUA/WAIUA">
     <img src="NOWT/Assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 </p>
-<h3 align="center">NOWT</h3>
-<h4 align="center">New Opponent Who This?</h4>
+<h3 align="center">WAIUA:RE</h3>
+<h4 align="center">Who Am I Up Against? Reloaded Edition</h4>
 
 <p align="center">
   A Windows application to view player ranks and other info in a live Valorant Match</p>
   <p align="center">
-    <img alt="GitHub" src="https://img.shields.io/github/license/pwall2222/NOWT?color=blue">
+    <img alt="GitHub" src="https://img.shields.io/github/license/WAIUA/WAIUA?color=blue">
     <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/pwall2222/NOWT/total?color=blue">
-    <a href="https://github.com/pwall2222/NOWT/releases/latest/download/NOWT-Installer.exe">
-      <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/pwall2222/NOWT">
+    <a href="https://github.com/pwall2222/NOWT/releases/latest/download/WAIUA.exe">
+      <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/WAIUA/WAIUA">
     </a>
   </p>
 </p>
@@ -49,7 +49,7 @@
 
 ## About The Project
 
-"New Opponent Who This?" (NOWT) is simple Windows app that lets you see the ranks, recent game stats and other info of players in a live Valorant match while you're still playing it. Below are the current features that are in the app.
+"Who Am I Up Against? Reloaded Edition" (WAIUA:RE) is simple Windows app that lets you see the ranks, recent game stats and other info of players in a live Valorant match while you're still playing it. Below are the current features that are in the app.
 
 ### Current Features
 
@@ -76,19 +76,19 @@ To get the app up and running follow these simple steps.
 
 ### Installation
 
-1. Download [the latest installer](https://github.com/pwall2222/NOWT/releases/latest/download/NOWT-Installer.exe)
+1. Download [the latest installer](https://github.com/WAIUA/WAIUA/releases/latest/download/WAIUA.exe)
 2. Run the .exe (If a blue box saying "Windows protected your PC" shows up, click `More Info` and then `Run Anyway`)
-3. Follow the steps to install NOWT
+3. Follow the steps to install WAIUA
 
 ## Usage
 
 1. Open the app
-2. NOWT will automatically check for new matches or wait for a match like a good boi
+2. WAIUA will automatically check for new matches or wait for a match like a good boi
 3. Win games (unless you find out you're playing against a smurf. In that case RIP your RR)
 
 ## Roadmap and Known Bugs
 
-Please check the [issues tab](https://github.com/pwall2222/NOWT/issues) before making a new issue.
+Please check the [issues tab](https://github.com/WAIUA/WAIUA/issues) before making a new issue.
 
 ## Built With
 
@@ -104,7 +104,7 @@ I knew none of these things before making this lol
 * [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/api/system.text.json) to deserialise JSON. Source generators are a Godsend
 * [Windows Community Toolkit MVVM](https://docs.microsoft.com/en-us/windows/communitytoolkit/mvvm/introduction) for MVVM. Ty for Source Generators too
 * [AutoUpdater.NET](https://github.com/ravibpatel/AutoUpdater.NET) for auto updates
-* [Inno Setup](https://jrsoftware.org/isinfo.php) to install NOWT
+* [Inno Setup](https://jrsoftware.org/isinfo.php) to install WAIUA
 * [FontAwesome](https://fontawesome.com/license) for icons. I'm also supposed say that I changed the colours so here it is
 
 ## Why I Made This
@@ -127,7 +127,7 @@ Thank you for your support! Any donation of $5 and over will get you into the ap
 
 ## Translations
 
-NOWT Supports full localization and instructions to help with translations can be found in [Localization](./Localization.md)
+WAIUA Supports full localization and instructions to help with translations can be found in [Localization](./Localization.md)
 
 ## Acknowledgements
 
