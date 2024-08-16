@@ -56,7 +56,7 @@
 							        Margin="10"
 							        Click="ImageClickAsync"
 							        Cursor="Hand"
-							        Tag="https://www.twitch.tv/ladams_"
+							        Tag="fhttps://www.twitch.tv/ladams_"
 							        ToolTip="Follow Ladams on Twitch"
 							        ToolTipService.InitialShowDelay="0">
 								<Ellipse Height="55"

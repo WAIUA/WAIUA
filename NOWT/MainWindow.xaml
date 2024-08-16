@@ -6,7 +6,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:waiua="clr-namespace:NOWT"
 	xmlns:viewModels="clr-namespace:NOWT.ViewModels"
-	Title="New Opponent Who This? (NOWT)"
+	Title="Who Am I Up Against? Reloaded Edition (WAIUARE)"
 	d:DesignHeight="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}"
 	d:DesignWidth="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
 	d:DataContext="{d:DesignInstance Type=viewModels:MainViewModel}"

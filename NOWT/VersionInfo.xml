@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <item>
-	<version>1.3.4</version>
-	<url>https://github.com/pwall2222/NOWT/releases/latest/download/NOWT-Installer.exe</url>
+	<version>2.0.1.0</version>
+	<url>https://github.com/WAIUA/WAIUA/releases/latest/download/WAIUA.exe</url>
 	<changelog>https://github.com/pwall2222/NOWT/releases/latest</changelog>
-	<mandatory>false</mandatory>
+	<mandatory>true</mandatory>
 </item>

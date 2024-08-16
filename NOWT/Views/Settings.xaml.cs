@@ -43,7 +43,7 @@ public partial class Settings : UserControl
         LatestVersion.Text = await GetLatestVersionAsync().ConfigureAwait(false);
         AutoUpdater.InstalledVersion = new Version(ProductVersion);
         AutoUpdater.Start(
-            "https://raw.githubusercontent.com/pwall2222/NOWT/main/NOWT/VersionInfo.xml"
+            "https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml"
         );
         await CheckAndUpdateJsonAsync().ConfigureAwait(false);
     }
@@ -51,7 +51,7 @@ public partial class Settings : UserControl
     private static Task<string> GetLatestVersionAsync()
     {
         var xml = new XmlDocument();
-        xml.Load("https://raw.githubusercontent.com/pwall2222/NOWT/main/NOWT/VersionInfo.xml");
+        xml.Load("https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml");
         var result = xml.GetElementsByTagName("version");
         return Task.FromResult(result[0].InnerText);
     }

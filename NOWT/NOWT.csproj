@@ -16,14 +16,14 @@
         <TargetFramework>net6.0-windows</TargetFramework>
         <UseWPF>true</UseWPF>
         <ApplicationIcon>logo.ico</ApplicationIcon>
-        <Version>1.3.4</Version>
+        <Version>2.0.1.0</Version>
         <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
         <StartupObject>NOWT.App</StartupObject>
         <Description>A Windows app to view player ranks and stats in a live Valorant Match</Description>
         <Copyright>Soneliem,PWall</Copyright>
         <PackageIcon>logo.png</PackageIcon>
         <PackageIconUrl />
-        <RepositoryUrl>https://github.com/pwall2222/NOWT</RepositoryUrl>
+        <RepositoryUrl>https://github.com/WAIUA/WAIUA</RepositoryUrl>
         <NeutralLanguage>en</NeutralLanguage>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Authors>Soneliem,PWall</Authors>
@@ -32,7 +32,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryType>git</RepositoryType>
         <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.3.4</FileVersion>
+        <FileVersion>2.0.1.0</FileVersion>
         <Platforms>AnyCPU</Platforms>
         <Nullable>annotations</Nullable>
     </PropertyGroup>
@@ -118,6 +118,10 @@
         <None Remove="Assets\Soneliem.png" />
         <None Remove="Assets\splash.png" />
         <None Remove="Assets\vandal.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="logo.ico" />
     </ItemGroup>
 
     <ItemGroup>

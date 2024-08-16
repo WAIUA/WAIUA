@@ -63,7 +63,7 @@ public partial class App : Application
 
         var version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         var update_url =
-            "https://raw.githubusercontent.com/pwall2222/NOWT/main/NOWT/VersionInfo.xml";
+            "https://raw.githubusercontent.com/WAIUA/WAIUA/master/WAIUA/VersionInfo.xml";
 
         Constants.LocalAppDataPath =
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\NOWT";

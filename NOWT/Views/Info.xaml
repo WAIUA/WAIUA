@@ -105,7 +105,7 @@
 			        HorizontalAlignment="Center"
 			        RenderOptions.BitmapScalingMode="HighQuality"
 			        Click="ImageClickAsync"
-			        Tag="https://github.com/pwall2222/NOWT/">
+			        Tag="https://github.com/WAIUA/WAIUA">
 				<Image Source="/Assets/logo.png" />
 				<Button.Effect>
 					<DropShadowEffect BlurRadius="5" ShadowDepth="3" />
@@ -118,7 +118,7 @@
 				Foreground="White"
 				FontFamily="{StaticResource Nunito}"
 				TextWrapping="Wrap">
-				NOWT
+				WAIUA:RE
 			</TextBlock>
 			<TextBlock
 				HorizontalAlignment="Center"
@@ -126,7 +126,7 @@
 				FontWeight="DemiBold"
 				FontFamily="{StaticResource Nunito}"
 				Foreground="#32e2b2"
-				Text="New Opponent Who This?"
+				Text="Who Am I Up Against? Reloaded Edition"
 				TextWrapping="Wrap" />
 		</StackPanel>
 
